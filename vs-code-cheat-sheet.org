@@ -1,0 +1,123 @@
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:nil broken-links:nil c:nil creator:nil
+#+OPTIONS: d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t num:t
+#+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+OPTIONS: timestamp:t title:nil toc:nil todo:t |:t
+#+LANGUAGE: fi
+
+#+latex_header: \usepackage[a4paper,margin=1cm,landscape]{geometry}
+#+latex_header: \usepackage{array,multicol,lscape}
+#+latex_header: \pagestyle{empty}
+
+
+#+latex: {\large\bfseries\sffamily VS code cheat sheet} \hfill {\sffamily Jarmo Hurri}\\[.4cm]
+
+#+BEGIN_CENTER
+
+#+latex: \scriptsize
+#+latex: \begin{multicols}{2}
+#+attr_latex: :align >{\ttfamily}l l l
+
+| feature            | action              | description                      |
+|--------------------+---------------------+----------------------------------|
+| any                | ~ctrl-shift-p~      | run vs code command              |
+|--------------------+---------------------+----------------------------------|
+| focus / visibility |                     |                                  |
+|                    | ~ctrl-1~            | focus editor                     |
+|                    | ~ctrl-tab~          | cycle editor                     |
+|                    | ~ctrl-w~            | close (editor window)            |
+|                    | ~ctrl-b~            | toggle (left) sidebar visibility |
+|                    | ~ctrl-shift-´~      | terminal                         |
+|                    | ~ctrl-j~            | toggle (bottom) panel visibility |
+|                    | ~ctrl-alt-i~        | toggle copilot visibility        |
+|                    | ~ctrl-shift-e~      | explorer                         |
+|--------------------+---------------------+----------------------------------|
+| files              |                     |                                  |
+|                    | ~ctrl-n~            | new                              |
+|                    | ~ctrl-s~            | save                             |
+|                    | ~ctrl-w~            | close                            |
+|--------------------+---------------------+----------------------------------|
+| selection          |                     |                                  |
+|                    | ~ctrl-a~            | select all code                  |
+|                    | ~shift-<arrow>~     | select code                      |
+|--------------------+---------------------+----------------------------------|
+| python evaluation  |                     |                                  |
+|                    | \(\triangleright\)  | run                              |
+|                    | ~shift-enter~       | eval line or selection in repl   |
+|--------------------+---------------------+----------------------------------|
+| git                |                     |                                  |
+|                    | ~ctrl-shift-p~ init | initialize git repository        |
+|                    | ~ctrl-shift-g~      | source control                   |
+
+#+attr_latex: :align >{\ttfamily}l l l
+
+| ai feature | action                           | description                       |
+|------------+----------------------------------+-----------------------------------|
+| chat       |                                  |                                   |
+|            | ~ctrl-alt-i~                     | chat view                         |
+|            | ~ctrl-i~ (editor/terminal/repl)  | inline chat                       |
+|            | ~ctrl-alt-shift-~\(\ell\)        | quick chat                        |
+|------------+----------------------------------+-----------------------------------|
+| chat view  |                                  |                                   |
+|            | ~ctrl-.~                         | toggle between chat modes         |
+|            | /Add Context.../                 | attach context to prompt          |
+|            | drag & drop file                 | attach file as context            |
+|            | drag & drop folder               | attach files within as context    |
+|            | drag & drop problem              | problem as context                |
+|            | [history icon]                   | access history of chat sessions   |
+|            | [mic icon]                       | enter chat prompt by using speech |
+|------------+----------------------------------+-----------------------------------|
+| generate   |                                  |                                   |
+|            | [smart-apply icon]               | smart-apply generated code        |
+|            | [insert icon]                    | insert code at cursor             |
+|            | [copy icon]                      | copy code block to clipboard      |
+|            | [terminal icon]                  | insert code in terminal           |
+|------------+----------------------------------+-----------------------------------|
+| editor     |                                  |                                   |
+|            | code comments                    | prompt by instructions in comment |
+|            | ~ctrl-.~                         | review / rewrite / extract        |
+
+#+attr_latex: :align >{\ttfamily}l l l
+
+| ai feature   | action                                              | description                         |
+|--------------+-----------------------------------------------------+-------------------------------------|
+| terminal     |                                                     |                                     |
+|              | ~ctrl-i~                                            | inline chat within terminal         |
+|--------------+-----------------------------------------------------+-------------------------------------|
+| participants |                                                     |                                     |
+|              | ~@workspace~                                        | current workspace                   |
+|              | ~@terminal~                                         | integrated terminal                 |
+|              | ~@vscode~                                           | vs code                             |
+|              | ~@github~                                           | github                              |
+|--------------+-----------------------------------------------------+-------------------------------------|
+| commands     |                                                     |                                     |
+|              | ~/explain~                                          | explain concept / code              |
+|              | ~/doc~                                              | generate documentation comments     |
+|              | ~/fix~                                              | fix code or resolve errors          |
+|              | ~/fixTestFailure~                                   | suggestions on fixing failing tests |
+|              | ~/new~                                              | new program element                 |
+|              | ~/tests~                                            | generate tests                      |
+|              | ~/setupTests~                                       | help setting up testing             |
+|--------------+-----------------------------------------------------+-------------------------------------|
+| tools        |                                                     |                                     |
+|              | ~#usages~                                           | find usages                         |
+|              | ~#new~                                              | create new project                  |
+|              | ~#fetch~                                            | fetch file (e.g. url)               |
+|              | ~#openSimpleBrowser~                                | open web app in built-in browser    |
+|--------------+-----------------------------------------------------+-------------------------------------|
+| variables /  |                                                     |                                     |
+| context      | ~#<file>~, ~#<folder>~, ~#selection~, ~#<function>~ | specific code                       |
+|              | ~#<class>~, ~#block~, ~#line~, ~#<symbol>~          |                                     |
+|              | ~#codebase~                                         | entire project or workspace         |
+|              | ~#problems~                                         | problems panel                      |
+|              | ~#terminal~                                         | integrated terminal                 |
+|              | ~#output~                                           | output panel                        |
+|              | ~#git~                                              | git status / related files          |
+|              | ~#changes~                                          | source control changes              |
+|              | ~#diff~                                             | code changes                        |
+|              | ~#githubRepo~                                       | specific github repo                |
+|              | ~#searchResults~                                    | search view results                 |
+|              | ~#testFailure~                                      | test failure information as context |
+
+#+latex: \end{multicols}
+#+END_CENTER
