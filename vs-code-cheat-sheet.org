@@ -18,38 +18,43 @@
 #+latex: \begin{multicols}{2}
 #+attr_latex: :align >{\ttfamily}l l l
 
-| feature              | action              | description                      |
-|----------------------+---------------------+----------------------------------|
-| any                  | ~ctrl-shift-p~      | run vs code command              |
-|----------------------+---------------------+----------------------------------|
-| focus / visibility   |                     |                                  |
-|                      | ~ctrl-1~            | focus editor                     |
-|                      | ~ctrl-tab~          | cycle editor                     |
-|                      | ~ctrl-w~            | close (editor window)            |
-|                      | ~ctrl-b~            | toggle (left) sidebar visibility |
-|                      | ~ctrl-shift-´~      | terminal                         |
-|                      | ~ctrl-j~            | toggle (bottom) panel visibility |
-|                      | ~ctrl-alt-i~        | toggle copilot visibility        |
-|                      | ~ctrl-shift-e~      | explorer                         |
-|----------------------+---------------------+----------------------------------|
-| files                |                     |                                  |
-|                      | ~ctrl-n~            | new                              |
-|                      | ~ctrl-s~            | save                             |
-|                      | ~ctrl-w~            | close                            |
-|----------------------+---------------------+----------------------------------|
-| selection            |                     |                                  |
-|                      | ~ctrl-a~            | select all code                  |
-|                      | ~shift-<arrow>~     | select code                      |
-|----------------------+---------------------+----------------------------------|
-| comment / uncommment | ~ctrl-/~            | toggle commenting region         |
-|----------------------+---------------------+----------------------------------|
-| python evaluation    |                     |                                  |
-|                      | \(\triangleright\)  | run                              |
-|                      | ~shift-enter~       | eval line or selection in repl   |
-|----------------------+---------------------+----------------------------------|
-| git                  |                     |                                  |
-|                      | ~ctrl-shift-p~ init | initialize git repository        |
-|                      | ~ctrl-shift-g~      | source control                   |
+| feature              | action / command                  | description                      |
+|----------------------+-----------------------------------+----------------------------------|
+| any                  | ~ctrl-shift-p~                    | run vs code command              |
+|----------------------+-----------------------------------+----------------------------------|
+| focus / visibility   |                                   |                                  |
+|                      | ~ctrl-1~                          | focus editor                     |
+|                      | ~ctrl-tab~                        | cycle editor                     |
+|                      | ~ctrl-w~                          | close (editor window)            |
+|                      | ~ctrl-b~                          | toggle (left) sidebar visibility |
+|                      | ~ctrl-shift-´~                    | terminal                         |
+|                      | ~ctrl-j~                          | toggle (bottom) panel visibility |
+|                      | ~ctrl-alt-i~                      | toggle copilot visibility        |
+|                      | ~ctrl-shift-e~                    | explorer                         |
+|----------------------+-----------------------------------+----------------------------------|
+| files                |                                   |                                  |
+|                      | ~ctrl-n~                          | new                              |
+|                      | ~ctrl-s~                          | save                             |
+|                      | ~ctrl-w~                          | close                            |
+|----------------------+-----------------------------------+----------------------------------|
+| selection            |                                   |                                  |
+|                      | ~ctrl-a~                          | select all code                  |
+|                      | ~shift-<arrow>~                   | select code                      |
+|----------------------+-----------------------------------+----------------------------------|
+| comment / uncommment | ~ctrl-/~                          | toggle commenting region         |
+|----------------------+-----------------------------------+----------------------------------|
+| python evaluation    |                                   |                                  |
+|                      | \(\triangleright\)                | run                              |
+|                      | ~shift-enter~                     | eval line or selection in repl   |
+|----------------------+-----------------------------------+----------------------------------|
+| git                  |                                   |                                  |
+|                      | ~ctrl-shift-p~ init               | initialize git repository        |
+|                      | ~ctrl-shift-g~                    | source control                   |
+|----------------------+-----------------------------------+----------------------------------|
+| virtual environment  | ~ctrl-shift-p~ create env         | create =venv= for project        |
+|                      | ~pip install <mod>~ (in terminal) | install =<mod>= in project       |
+
+#+latex: \vspace*{0.5cm}
 
 #+attr_latex: :align >{\ttfamily}l l l
 
