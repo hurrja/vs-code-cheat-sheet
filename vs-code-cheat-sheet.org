@@ -53,7 +53,7 @@
 |                  | ~ctrl-shift-p~ init                                    | initialize git repository        |
 |                  | ~ctrl-shift-g~                                         | source control                   |
 |------------------+--------------------------------------------------------+----------------------------------|
-| packages         | ~ctrl-shift-p~ create env                              | create =venv= for project        |
+| packages         | ~ctrl-shift-p~ create env                              | create (reactivate) =venv=       |
 |                  | ~python -m pip install <pkg>~                          | install =<pkg>= in project       |
 |                  | ~python -m pip freeze > requirements.txt~              | record dependencies in file      |
 
