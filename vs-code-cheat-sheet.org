@@ -64,8 +64,8 @@
 | ai feature | action                           | description                       |
 |------------+----------------------------------+-----------------------------------|
 | chat       |                                  |                                   |
-|            | ~ctrl-alt-i~                     | chat view                         |
 |            | ~ctrl-i~ (editor/terminal/repl)  | inline chat                       |
+|            | ~ctrl-alt-i~                     | chat view                         |
 |            | ~ctrl-alt-shift-~\(\ell\)        | quick chat                        |
 |------------+----------------------------------+-----------------------------------|
 | chat view  |                                  |                                   |
@@ -95,19 +95,20 @@
 |              | ~ctrl-i~                                            | inline chat within terminal         |
 |--------------+-----------------------------------------------------+-------------------------------------|
 | participants |                                                     |                                     |
-|              | ~@workspace~                                        | current workspace                   |
-|              | ~@terminal~                                         | integrated terminal                 |
 |              | ~@vscode~                                           | vs code                             |
 |              | ~@github~                                           | github                              |
+|              | ~@workspace~                                        | current workspace                   |
+|              | ~@terminal~                                         | integrated terminal                 |
 |--------------+-----------------------------------------------------+-------------------------------------|
 | commands     |                                                     |                                     |
 |              | ~/explain~                                          | explain concept / code              |
-|              | ~/doc~                                              | generate documentation comments     |
-|              | ~/fix~                                              | fix code or resolve errors          |
-|              | ~/fixTestFailure~                                   | suggestions on fixing failing tests |
-|              | ~/new~                                              | new program element                 |
 |              | ~/tests~                                            | generate tests                      |
+|              | ~/fix~                                              | fix code or resolve errors          |
+|              | ~/doc~                                              | generate documentation comments     |
+|              | ~/new~                                              | new program element                 |
 |              | ~/setupTests~                                       | help setting up testing             |
+|--------------+-----------------------------------------------------+-------------------------------------|
+| test error   | find failed test \rightarrow fix test failure       | analyses test problem and fix       |
 |--------------+-----------------------------------------------------+-------------------------------------|
 | tools        |                                                     |                                     |
 |              | ~#usages~                                           | find usages                         |
