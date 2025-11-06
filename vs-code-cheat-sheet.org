@@ -56,6 +56,9 @@
 | packages         | ~ctrl-shift-p~ create env                              | create (reactivate) =venv=       |
 |                  | ~python -m pip install <pkg>~                          | install =<pkg>= in project       |
 |                  | ~python -m pip freeze > requirements.txt~              | record dependencies in file      |
+|------------------+--------------------------------------------------------+----------------------------------|
+| resetting        | ~ctrl-shift-p~ developer reload window                 | reset VS code                    |
+|                  | ~ctrl-shift-p~ python clear cache reload window        | reset python                     |
 
 #+latex: \vspace*{0.5cm}
 
@@ -75,7 +78,6 @@
 |            | drag & drop folder               | attach files within as context    |
 |            | drag & drop problem              | problem as context                |
 |            | [history icon]                   | access history of chat sessions   |
-|            | [mic icon]                       | enter chat prompt by using speech |
 |------------+----------------------------------+-----------------------------------|
 | generate   |                                  |                                   |
 |            | [smart-apply icon]               | smart-apply generated code        |
