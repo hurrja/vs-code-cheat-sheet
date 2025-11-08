@@ -67,35 +67,35 @@
 
 #+attr_latex: :align >{\ttfamily}l l l
 
-| ai feature   | action                                        | description                       |
-|--------------+-----------------------------------------------+-----------------------------------|
-| completion   | ~ctrl-shift-p~ copilot toggle                 | toggle completions on/off         |
-|              | ~tab~                                         | accept completion                 |
-|--------------+-----------------------------------------------+-----------------------------------|
-| editor       | code comments                                 | prompt by instructions in comment |
-|              | select code \rightarrow ~ctrl-.~              | modify / review                   |
-|--------------+-----------------------------------------------+-----------------------------------|
-| commands     | ~/explain~                                    | explain concept / code            |
-|              | ~/tests~                                      | generate tests                    |
-|              | ~/fix~                                        | fix code or resolve errors        |
-|              | ~/doc~                                        | generate documentation comments   |
-|--------------+-----------------------------------------------+-----------------------------------|
-| chat         | ~ctrl-i~ (editor/terminal/repl)               | inline chat                       |
-|              | ~ctrl-alt-i~                                  | chat view                         |
-|              | ~ctrl-alt-shift-~\(\ell\)                     | quick chat                        |
-|--------------+-----------------------------------------------+-----------------------------------|
-| chat view    | ~ctrl-.~                                      | toggle between chat modes         |
-|              | ~+~ (top of ai chat)                          | add new chat                      |
-|--------------+-----------------------------------------------+-----------------------------------|
-| participants | ~@vscode~                                     | VS code                           |
-|              | ~@terminal~                                   | integrated terminal               |
-|              | ~@github~                                     | github                            |
-|              | ~@workspace~                                  | current workspace                 |
-|--------------+-----------------------------------------------+-----------------------------------|
-| test error   | find failed test \rightarrow fix test failure | analyses test problem and fix     |
-|--------------+-----------------------------------------------+-----------------------------------|
-| tools        | ~#usages~                                     | find usages (of e.g. function)    |
-|              | ~#fetch~                                      | fetch file (e.g. url)             |
+| ai feature   | action                                   | description                       |
+|--------------+------------------------------------------+-----------------------------------|
+| completion   | ~ctrl-shift-p~ copilot toggle            | toggle completions on/off         |
+|              | ~tab~                                    | accept completion                 |
+|--------------+------------------------------------------+-----------------------------------|
+| editor       | code comments                            | prompt by instructions in comment |
+|              | select code \rightarrow ~ctrl-.~         | modify / review                   |
+|--------------+------------------------------------------+-----------------------------------|
+| chat         | ~ctrl-i~ (editor/terminal/repl)          | inline chat                       |
+|              | ~ctrl-alt-i~                             | chat view                         |
+|              | ~ctrl-alt-shift-~\(\ell\)                | quick chat                        |
+|--------------+------------------------------------------+-----------------------------------|
+| commands     | ~/explain~                               | explain concept / code            |
+|              | ~/tests~                                 | generate tests                    |
+|              | ~/fix~                                   | fix code or resolve errors        |
+|              | ~/doc~                                   | generate documentation comments   |
+|--------------+------------------------------------------+-----------------------------------|
+| chat view    | ~ctrl-.~                                 | toggle between chat modes         |
+|              | ~+~ (top of ai chat)                     | add new chat                      |
+|--------------+------------------------------------------+-----------------------------------|
+| participants | ~@vscode~                                | VS code                           |
+|              | ~@terminal~                              | integrated terminal               |
+|              | ~@github~                                | github                            |
+|              | ~@workspace~                             | current workspace                 |
+|--------------+------------------------------------------+-----------------------------------|
+| test error   | failed test \rightarrow fix test failure | analyse failure and generate fix  |
+|--------------+------------------------------------------+-----------------------------------|
+| tools        | ~#usages~                                | find usages (of e.g. function)    |
+|              | ~#fetch~                                 | fetch file (e.g. url)             |
 
 #+latex: \end{multicols}
 #+END_CENTER
