@@ -66,6 +66,10 @@
 
 | ai feature | action                           | description                       |
 |------------+----------------------------------+-----------------------------------|
+| editor     |                                  |                                   |
+|            | code comments                    | prompt by instructions in comment |
+|            | select code \rightarrow ~ctrl-.~ | modify / review                   |
+|------------+----------------------------------+-----------------------------------|
 | chat       |                                  |                                   |
 |            | ~ctrl-i~ (editor/terminal/repl)  | inline chat                       |
 |            | ~ctrl-alt-i~                     | chat view                         |
@@ -84,10 +88,6 @@
 |            | [insert icon]                    | insert code at cursor             |
 |            | [copy icon]                      | copy code block to clipboard      |
 |            | [terminal icon]                  | insert code in terminal           |
-|------------+----------------------------------+-----------------------------------|
-| editor     |                                  |                                   |
-|            | code comments                    | prompt by instructions in comment |
-|            | ~ctrl-.~                         | review / rewrite / extract        |
 
 #+attr_latex: :align >{\ttfamily}l l l
 
@@ -98,25 +98,21 @@
 |--------------+-----------------------------------------------------+-------------------------------------|
 | participants |                                                     |                                     |
 |              | ~@vscode~                                           | vs code                             |
+|              | ~@terminal~                                         | integrated terminal                 |
 |              | ~@github~                                           | github                              |
 |              | ~@workspace~                                        | current workspace                   |
-|              | ~@terminal~                                         | integrated terminal                 |
 |--------------+-----------------------------------------------------+-------------------------------------|
 | commands     |                                                     |                                     |
 |              | ~/explain~                                          | explain concept / code              |
 |              | ~/tests~                                            | generate tests                      |
 |              | ~/fix~                                              | fix code or resolve errors          |
 |              | ~/doc~                                              | generate documentation comments     |
-|              | ~/new~                                              | new program element                 |
-|              | ~/setupTests~                                       | help setting up testing             |
 |--------------+-----------------------------------------------------+-------------------------------------|
 | test error   | find failed test \rightarrow fix test failure       | analyses test problem and fix       |
 |--------------+-----------------------------------------------------+-------------------------------------|
 | tools        |                                                     |                                     |
-|              | ~#usages~                                           | find usages                         |
-|              | ~#new~                                              | create new project                  |
+|              | ~#usages~                                           | find usages (of e.g. function)      |
 |              | ~#fetch~                                            | fetch file (e.g. url)               |
-|              | ~#openSimpleBrowser~                                | open web app in built-in browser    |
 |--------------+-----------------------------------------------------+-------------------------------------|
 | variables /  |                                                     |                                     |
 | context      | ~#<file>~, ~#<folder>~, ~#selection~, ~#<function>~ | specific code                       |
