@@ -18,115 +18,84 @@
 #+latex: \begin{multicols}{2}
 #+attr_latex: :align >{\ttfamily}l l l
 
-| feature          | action / command                                       | description                      |
-|------------------+--------------------------------------------------------+----------------------------------|
-| any              | ~ctrl-shift-p~                                         | run vs code command              |
-|------------------+--------------------------------------------------------+----------------------------------|
-| terminal type    | ~ctrl-shift-p~ terminal profile \rightarrow ~git bash~ | set =bash= as terminal           |
-|------------------+--------------------------------------------------------+----------------------------------|
-| focus/visibility |                                                        |                                  |
-|                  | ~ctrl-1~                                               | focus editor                     |
-|                  | ~ctrl-tab~                                             | cycle editor                     |
-|                  | ~ctrl-w~                                               | close (editor window)            |
-|                  | ~ctrl-b~                                               | toggle (left) sidebar visibility |
-|                  | ~ctrl-shift-´~                                         | terminal                         |
-|                  | ~ctrl-j~                                               | toggle (bottom) panel visibility |
-|                  | ~ctrl-alt-i~                                           | toggle copilot visibility        |
-|                  | ~ctrl-shift-e~                                         | explorer                         |
-|------------------+--------------------------------------------------------+----------------------------------|
-| files            |                                                        |                                  |
-|                  | ~ctrl-n~                                               | new                              |
-|                  | ~ctrl-s~                                               | save                             |
-|                  | ~ctrl-w~                                               | close                            |
-|------------------+--------------------------------------------------------+----------------------------------|
-| selection        |                                                        |                                  |
-|                  | ~ctrl-a~                                               | select all code                  |
-|                  | ~shift-<arrow>~                                        | select code                      |
-|------------------+--------------------------------------------------------+----------------------------------|
-| (un)comment      | ~ctrl-/~                                               | toggle commenting region         |
-|------------------+--------------------------------------------------------+----------------------------------|
-| python eval      |                                                        |                                  |
-|                  | \(\triangleright\)                                     | run                              |
-|                  | ~shift-enter~                                          | eval line or selection in repl   |
-|------------------+--------------------------------------------------------+----------------------------------|
-| git              |                                                        |                                  |
-|                  | ~ctrl-shift-p~ init                                    | initialize git repository        |
-|                  | ~ctrl-shift-g~                                         | source control                   |
-|------------------+--------------------------------------------------------+----------------------------------|
-| packages         | ~ctrl-shift-p~ create env                              | create (reactivate) =venv=       |
-|                  | ~python -m pip install <pkg>~                          | install =<pkg>= in project       |
-|                  | ~python -m pip freeze > requirements.txt~              | record dependencies in file      |
-|------------------+--------------------------------------------------------+----------------------------------|
-| resetting        | ~ctrl-shift-p~ developer reload window                 | reset VS code                    |
-|                  | ~ctrl-shift-p~ python clear cache reload window        | reset python                     |
+| feature          | action / command                                              | description                      |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| any              | ~ctrl-shift-p~                                                | run VS code command              |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| terminal type    | ~ctrl-shift-p~ terminal profile \rightarrow ~git bash~        | set =bash= as terminal           |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| focus/visibility | ~ctrl-1~                                                      | focus editor                     |
+|                  | ~ctrl-tab~                                                    | cycle editor                     |
+|                  | ~ctrl-w~                                                      | close (editor window)            |
+|                  | ~ctrl-b~                                                      | toggle (left) sidebar visibility |
+|                  | ~ctrl-shift-´~                                                | terminal                         |
+|                  | ~ctrl-j~                                                      | toggle (bottom) panel visibility |
+|                  | ~ctrl-alt-i~                                                  | toggle copilot visibility        |
+|                  | ~ctrl-shift-e~                                                | explorer                         |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| files            | ~ctrl-n~                                                      | new                              |
+|                  | ~ctrl-s~                                                      | save                             |
+|                  | ~ctrl-w~                                                      | close                            |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| editing          | ~ctrl-z~                                                      | undo                             |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| selection        | ~ctrl-a~                                                      | select all code                  |
+|                  | ~shift-<arrow>~                                               | select code                      |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| (un)comment      | ~ctrl-/~                                                      | toggle commenting region         |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| python eval      | \(\triangleright\)                                            | run                              |
+|                  | ~shift-enter~                                                 | eval line or selection in repl   |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| git              | ~ctrl-shift-p~ init                                           | initialize git repository        |
+|                  | ~ctrl-shift-g~                                                | source control panel             |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| packages         | ~ctrl-shift-p~ create env                                     | create (reactivate) =venv=       |
+|                  | ~python -m pip install <pkg>~                                 | install =<pkg>= in project       |
+|                  | ~python -m pip freeze > requirements.txt~                     | record dependencies in file      |
+|                  | ~python -m pip install -r requirements.txt~                   | install  dependencies from file  |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| debugging        | mouse click on gutter                                         | set breakpoint                   |
+|                  | dropdown next to \(\triangleright\) \rightarrow ... Debug ... | start debugger                   |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| testing          | ~python -m pip install pytest~                                | install =pytest= in =venv=       |
+|------------------+---------------------------------------------------------------+----------------------------------|
+| resetting        | ~ctrl-shift-p~ developer reload window                        | reset VS code                    |
+|                  | ~ctrl-shift-p~ python clear cache reload window               | reset python                     |
 
 #+latex: \vspace*{0.5cm}
 
 #+attr_latex: :align >{\ttfamily}l l l
 
-| ai feature | action                           | description                       |
-|------------+----------------------------------+-----------------------------------|
-| editor     |                                  |                                   |
-|            | code comments                    | prompt by instructions in comment |
-|            | select code \rightarrow ~ctrl-.~ | modify / review                   |
-|------------+----------------------------------+-----------------------------------|
-| chat       |                                  |                                   |
-|            | ~ctrl-i~ (editor/terminal/repl)  | inline chat                       |
-|            | ~ctrl-alt-i~                     | chat view                         |
-|            | ~ctrl-alt-shift-~\(\ell\)        | quick chat                        |
-|------------+----------------------------------+-----------------------------------|
-| chat view  |                                  |                                   |
-|            | ~ctrl-.~                         | toggle between chat modes         |
-|            | /Add Context.../                 | attach context to prompt          |
-|            | drag & drop file                 | attach file as context            |
-|            | drag & drop folder               | attach files within as context    |
-|            | drag & drop problem              | problem as context                |
-|            | [history icon]                   | access history of chat sessions   |
-|------------+----------------------------------+-----------------------------------|
-| generate   |                                  |                                   |
-|            | [smart-apply icon]               | smart-apply generated code        |
-|            | [insert icon]                    | insert code at cursor             |
-|            | [copy icon]                      | copy code block to clipboard      |
-|            | [terminal icon]                  | insert code in terminal           |
-
-#+attr_latex: :align >{\ttfamily}l l l
-
-| ai feature   | action                                              | description                         |
-|--------------+-----------------------------------------------------+-------------------------------------|
-| terminal     |                                                     |                                     |
-|              | ~ctrl-i~                                            | inline chat within terminal         |
-|--------------+-----------------------------------------------------+-------------------------------------|
-| participants |                                                     |                                     |
-|              | ~@vscode~                                           | vs code                             |
-|              | ~@terminal~                                         | integrated terminal                 |
-|              | ~@github~                                           | github                              |
-|              | ~@workspace~                                        | current workspace                   |
-|--------------+-----------------------------------------------------+-------------------------------------|
-| commands     |                                                     |                                     |
-|              | ~/explain~                                          | explain concept / code              |
-|              | ~/tests~                                            | generate tests                      |
-|              | ~/fix~                                              | fix code or resolve errors          |
-|              | ~/doc~                                              | generate documentation comments     |
-|--------------+-----------------------------------------------------+-------------------------------------|
-| test error   | find failed test \rightarrow fix test failure       | analyses test problem and fix       |
-|--------------+-----------------------------------------------------+-------------------------------------|
-| tools        |                                                     |                                     |
-|              | ~#usages~                                           | find usages (of e.g. function)      |
-|              | ~#fetch~                                            | fetch file (e.g. url)               |
-|--------------+-----------------------------------------------------+-------------------------------------|
-| variables /  |                                                     |                                     |
-| context      | ~#<file>~, ~#<folder>~, ~#selection~, ~#<function>~ | specific code                       |
-|              | ~#<class>~, ~#block~, ~#line~, ~#<symbol>~          |                                     |
-|              | ~#codebase~                                         | entire project or workspace         |
-|              | ~#problems~                                         | problems panel                      |
-|              | ~#terminal~                                         | integrated terminal                 |
-|              | ~#output~                                           | output panel                        |
-|              | ~#git~                                              | git status / related files          |
-|              | ~#changes~                                          | source control changes              |
-|              | ~#diff~                                             | code changes                        |
-|              | ~#githubRepo~                                       | specific github repo                |
-|              | ~#searchResults~                                    | search view results                 |
-|              | ~#testFailure~                                      | test failure information as context |
+| ai feature   | action                                        | description                       |
+|--------------+-----------------------------------------------+-----------------------------------|
+| completion   | ~ctrl-shift-p~ copilot toggle                 | toggle completions on/off         |
+|              | ~tab~                                         | accept completion                 |
+|--------------+-----------------------------------------------+-----------------------------------|
+| editor       | code comments                                 | prompt by instructions in comment |
+|              | select code \rightarrow ~ctrl-.~              | modify / review                   |
+|--------------+-----------------------------------------------+-----------------------------------|
+| commands     | ~/explain~                                    | explain concept / code            |
+|              | ~/tests~                                      | generate tests                    |
+|              | ~/fix~                                        | fix code or resolve errors        |
+|              | ~/doc~                                        | generate documentation comments   |
+|--------------+-----------------------------------------------+-----------------------------------|
+| chat         | ~ctrl-i~ (editor/terminal/repl)               | inline chat                       |
+|              | ~ctrl-alt-i~                                  | chat view                         |
+|              | ~ctrl-alt-shift-~\(\ell\)                     | quick chat                        |
+|--------------+-----------------------------------------------+-----------------------------------|
+| chat view    | ~ctrl-.~                                      | toggle between chat modes         |
+|              | ~+~ (top of ai chat)                          | add new chat                      |
+|--------------+-----------------------------------------------+-----------------------------------|
+| participants | ~@vscode~                                     | VS code                           |
+|              | ~@terminal~                                   | integrated terminal               |
+|              | ~@github~                                     | github                            |
+|              | ~@workspace~                                  | current workspace                 |
+|--------------+-----------------------------------------------+-----------------------------------|
+| test error   | find failed test \rightarrow fix test failure | analyses test problem and fix     |
+|--------------+-----------------------------------------------+-----------------------------------|
+| tools        | ~#usages~                                     | find usages (of e.g. function)    |
+|              | ~#fetch~                                      | fetch file (e.g. url)             |
 
 #+latex: \end{multicols}
 #+END_CENTER
